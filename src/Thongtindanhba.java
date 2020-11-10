@@ -1,4 +1,6 @@
-public class Thongtindanhba extends Person {
+import java.io.Serializable;
+
+public class Thongtindanhba extends Person implements Serializable {
     private String phoneNumber;
     private String group;
 

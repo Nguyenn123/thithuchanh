@@ -1,10 +1,11 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class Method {
-    ArrayList<Thongtindanhba> thongtindanhbas = new ArrayList<>();
+    ArrayList<Thongtindanhba> thongtindanhbas = readFile() == null ? new ArrayList<>() : readFile();
 
     public void create(Thongtindanhba thongtindanhba) {
         thongtindanhbas.add(thongtindanhba);
